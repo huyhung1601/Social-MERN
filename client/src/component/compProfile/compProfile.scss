@@ -1,0 +1,71 @@
+.compProfile {
+  margin: 0;
+  width: 100vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #fff;
+  flex-direction: column;
+  padding: 1rem 20rem;
+  position: relative;
+  .compInf {
+    width: 50rem;
+    height: fit-content;
+    display: flex;
+    overflow: hidden;
+    &.hide{
+      height: 0;
+    }
+    .left {
+      img {
+        height: 12rem;
+        border-radius: 15px;
+        margin-right: 2rem;
+        object-fit: cover;
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+  .tabs {
+    margin-top: 10px;
+    display: flex;
+    .tab {
+      padding: 0 10px;
+      margin-right: 15px;
+    }
+  }
+  .scrolling {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 4rem;
+    height: 2rem;
+    background-color: lightblue;
+    bottom: 2rem;
+    left: 50%;
+    z-index: 2;
+    background: linear-gradient(
+      to top,
+      rgba(247, 248, 248, 0.1 ) 20%,
+      rgba(104, 174, 240, 0.8) 80%,
+
+    );
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    color: #007bff;
+  &.hide{
+    background: linear-gradient(
+      to bottom,
+      rgba(247, 248, 248, 0.1 ) 20%,
+      rgba(104, 174, 240, 0.8) 80%,
+
+    );
+  }
+  }
+}

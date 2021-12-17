@@ -1,0 +1,84 @@
+.textEditorContainer {
+    width: 100%;
+    min-height: 11rem;
+    padding: 0 ;
+    margin: 0;
+    left: 2rem;
+    position: absolute;
+    z-index: 2;
+    .textEditorWrapper {
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 5px;
+      box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.56);      
+      .textEditorHeader {
+        background-color: rgb(120, 193, 218);
+        padding: 3px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .textEditorHeaderLeft {
+          ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            li {
+              cursor: pointer;
+              padding: 3px 5px;
+                border-radius: 2px;
+                margin: 0 5px;
+              &:hover {                
+                background: rgba(163, 217, 238, 0.7);
+              }
+              .fontMenu {
+                position: relative;
+                &:hover{
+                  .fontList{
+                    visibility: visible;
+                    top: 2rem;    
+                    z-index: 2;              
+                  }
+                }
+                .fontFamily {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  width: 5rem;
+                }
+                .fontList {
+                  padding: 2px;
+                  width: 10rem;
+                  display: flex;
+                  top: 2.5rem;
+                  left: -0.8rem;
+                  flex-direction: column;
+                  position: absolute;
+                  background: rgba(163, 217, 238, );
+                  visibility: hidden;
+                  transition: 0.2s ease-in;                
+                  .fontItem {
+                    padding: 2px;
+                    margin-top: 2px;
+                    cursor: pointer;
+                  }
+                }
+              } 
+            }
+          }
+        }       
+      }
+      .textEditorInput {
+          width: 100%;
+          border: none;
+      }
+    }
+  }
+  

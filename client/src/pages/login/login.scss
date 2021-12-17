@@ -1,0 +1,89 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    position: relative;
+    .loginContainer{   
+        height: 35rem;
+        width: 40rem;    
+        display: flex;
+        z-index: 3;
+        border-radius: 10px;        
+        border: none;  
+        box-shadow: 0 5px 45px rgba(0,0,0,0.2);
+        backdrop-filter: blur(2rem);
+        
+        &::after{
+            content: '';
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+            position: absolute;
+            bottom: -10%;
+            right: -10%;
+            z-index: -1;
+            filter: blur(15px)           
+        }
+
+        .loginContainerLeft{
+            flex: 6;
+            padding: 30px;            
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            flex-direction: column;            
+            background: linear-gradient( to right top , #58c6da 5%, #1b92e2 80%,  );
+            border-radius: 5px 0 0 5px;
+            border: 1px solid rgba(255,255,255,0.4);  
+            border-right: none;
+            .top{
+                display: flex;                
+                color: white;
+                .logo{
+                    margin-right: 5px;
+                    font-size: 30px;
+                }
+            }
+            
+        } 
+        .loginContainerRight{
+            position: relative;
+            flex: 6;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;   
+            border-left: none;
+            border-radius: 0 5px 5px 0;
+            border: 1px solid rgba(255,255,255,0.4);  
+            
+            .loginForm{
+            }   
+            button{
+                width: 100%;
+            }   
+            .bottom{
+                margin-top: 20px;
+
+            }  
+        }        
+    }
+    .circle{
+        background: white;
+        background: linear-gradient(to right bottom, rgba(255,255,255,0.8),rgba(255,255,255,0.3));
+        height: 15rem;
+        width: 15rem;
+        border-radius: 50%;
+        position: absolute;
+        &.one{
+            top: 8%;
+            right: 10%;
+        }
+       
+        
+    }
+}

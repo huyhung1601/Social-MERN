@@ -1,0 +1,24 @@
+.navbar{
+    height: 50px;
+    width: 100vw;
+    margin: 0;
+    padding: 5px 25px;
+    background: linear-gradient(to right bottom, rgba(241, 229, 229, 0.7),rgba(255,255,255,0.3));
+    z-index: 1;
+    backdrop-filter: blur(2rem);
+    .center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        cursor: pointer;
+        .logo{
+            margin-right: 3px;
+        }
+    }
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

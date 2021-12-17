@@ -1,0 +1,44 @@
+.topRatedPost {
+  margin: 4px 2px;
+  padding: 0;
+  background: rgb(78, 173, 228, 0.3);
+  border-radius: 5px;
+  display: flex; 
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  font-size: 12px;
+  .postImg {
+    margin-right: 5px;
+    img {
+      border-radius: 5px 0 0 5px;
+      width: 2.5rem;
+      height: 2.5rem;
+      object-fit: cover;
+    } 
+  }
+  .postContent {
+      width: 100%;
+    .postTitle{
+        font-weight: 700;
+    }
+    .postReactions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .postReaction {
+        margin-right: 0.5rem; 
+        display: flex;
+        align-items: center;
+        &.View{
+          flex: 1;
+        }
+      }
+      .reactionIcon {
+        width: 1rem;
+        color: rgb(78, 173, 228, 1);
+        margin-left: 5px;
+      }
+    }
+  }
+}

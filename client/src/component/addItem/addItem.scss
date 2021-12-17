@@ -1,0 +1,129 @@
+.addItemContainer{
+  width: 100%;
+.itemContent {
+  padding: 0 3rem;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  &:hover{
+    .deleteBtn{
+      opacity: 1;
+    }
+  }
+  .deleteBtn{
+    opacity: 0;
+    border: none;
+    background-color: rgb(233, 233, 233,0.1);
+    box-shadow: 0px 0px 9px -3px rgba(0, 0, 0, 0.2);
+    color: rgb(182, 11, 11);
+    position: absolute;
+    backdrop-filter: blur(2rem);
+    z-index: 1;
+    top: -15px;
+    right: 5px;
+  }
+  .itemText {
+    margin: 0;
+  }
+  .itemImgContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -5.2rem;
+    .isLoading{
+      position: absolute;
+      z-index: 2;
+      background-color: rgba(255,255,255,0.1);
+      backdrop-filter: blur(3px);      
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .itemImg {
+      width: 15rem;
+      height: 15rem;
+      object-fit: cover;
+    }
+  }
+}
+.addItemWrapper {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+  margin: 0 15px;
+  &.isDragging{
+    visibility: hidden;
+  }
+  &.active {
+    &::after {
+      background: rgba(198, 233, 238, 0.8);
+      backdrop-filter: (1px);
+      position: absolute;
+      z-index: 1;
+      content: "";
+      left: -2rem;
+      width: 120%;
+      height: 75rem;
+    }
+  }
+  .addItem-btn {
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    border: none;
+    position: relative;
+    border: solid 1px rgba(197, 189, 189, 0.3);
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 9px -3px rgba(0, 0, 0, 0.9);
+    &::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      right: -6px;
+      width: 10px;
+      height: 10px;
+      transform: rotate(45deg);
+      background: white;
+      border-right: solid 1px rgba(197, 189, 189, 0.4);
+      border-top: solid 1px rgba(197, 189, 189, 0.4);
+    }
+  }
+  .menu {
+    position: absolute;
+    z-index: 1;
+    left: 4rem;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 0px 9px -3px rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    opacity: 1;
+    visibility: hidden;
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    .menu-item {
+      text-align: center;
+      margin: 0 5px;
+      padding: 15px;
+      cursor: pointer;
+      .shareImg {
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  
+}
+}

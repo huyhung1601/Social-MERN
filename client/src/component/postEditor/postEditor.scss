@@ -1,0 +1,63 @@
+.postEditor {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 43rem;
+  input {
+    border: none;
+    width: 100%;
+  }
+  .header {
+    margin: 0;
+    background-color: rgba(47, 171, 212, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      .userAvatar {
+        margin: 5px;
+      }
+    }
+    .right {
+      .postEditorBtn {
+        border: none;
+        background-color: inherit;
+        height: 3rem;
+        width: 4rem;
+        color: white;
+        text-decoration: none;
+        &:hover {
+          background-color: rgba(47, 171, 212, 1);
+        }
+      }
+    }
+  }
+  .content {
+    display: flex;
+    height: 85%;
+    background-color: none;
+    .left {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      box-shadow: -1px 3px 9px -1px rgba(0, 0, 0, 0.56);
+      margin: 2rem;
+      margin-bottom: 0;
+      height: 95%;
+      flex: 9;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .droppable {
+        width: 100%;
+      }
+      .draggable {
+        width: 100%;
+      }
+    }
+    .right {
+      margin: 2rem  1rem 0 0;
+      flex: 3;
+      background-color: lightblue;
+    }
+  }
+}

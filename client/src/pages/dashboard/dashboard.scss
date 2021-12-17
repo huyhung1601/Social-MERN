@@ -1,0 +1,106 @@
+  .dashboard {
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    z-index: 3;
+    backdrop-filter: blur(2rem);
+    .dashboardWrapper {
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 10px;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+      background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.3)
+      );
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin: 1rem;
+      padding: 1rem;
+      &.Left {
+        min-width: 20rem;
+        flex: 3;
+        .topRated {
+          border-radius: 5px;
+          width: 100%;
+          padding: 5px;
+          background-color: rgba(255, 255, 255, 0.7);
+          &.Header {
+            height: 5rem;
+            color: #065bb6;
+            .topRatedBy {
+              display: flex;
+              align-items: center;
+              &.Posts {
+                justify-content: center;
+                .topRatedMenu {
+                  color: #065bb6;
+                  margin-left: 15px;
+                  .selectInput {
+                    background-color: inherit;
+                    border: none;
+                  }
+                }
+              }
+              &.Time {
+                justify-content: space-evenly;
+              }
+            }
+          }
+
+          &.List {
+            height: 100%;
+            margin-top: 10px;
+            .morePosts {
+              text-align: center;
+              font-weight: 500;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      &.Right {
+        flex: 9;
+        .rightBoard {
+          border-radius: 5px;
+          &.Header {
+            height: 5rem;
+            .communityInfo {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              .infoItem {
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-width: 9rem;
+                border-radius: 5px;
+                padding: 5px;
+                .searchInput {
+                  width: 20rem;
+                }
+                .infoItemContent {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  .infoItemIcon {
+                    margin-right: 5px;
+                  }
+                }
+              }
+            }
+          }
+          &.Content {
+            background-color: #fff;
+            background-image: url("./chart.jpg");
+            background-size: cover;
+            margin-top: 10px;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+

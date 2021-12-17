@@ -1,0 +1,14 @@
+.timeBtn {
+    border: none;
+    border-radius: 5px;
+    min-width: 4rem;
+    width: 32%;
+    background: inherit;
+    background: rgb(78, 173, 228, 0.2);
+    color: #065bb6;
+
+    &.active {
+      color: white;
+      background: rgb(78, 173, 228, 0.8);
+    }
+}

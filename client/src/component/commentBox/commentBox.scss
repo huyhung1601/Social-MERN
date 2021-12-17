@@ -1,0 +1,72 @@
+.commentBox {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  margin: 10px;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.2);
+  .commentLists {
+    height: 20rem;
+    background-image: url("./2.jpg");
+    background-size: 42rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-y: scroll;
+    &.empty {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .postReactions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    .postReactWrapper {
+      display: flex;
+      .postReact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 1rem;
+        .postReactIcon {
+          color: rgba(47, 171, 212, 0.8);
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+  .devider {
+    margin: 4px 2px;
+  }
+  .postReactBtns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .postReactBtn {
+      background-color: inherit;
+      border: none;
+      width: 49%;
+      color: rgba(47, 171, 212, 0.8);
+      font-weight: 700;
+      &:hover {
+        background-color: rgba(47, 171, 212, 0.8);
+        color: white;
+      }
+    }
+  }
+  .inputForm {
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .commentInput {
+      margin-left: 5px;
+      border-radius: 5px;
+      border: none;
+      width: 100%;
+    }
+  }
+}

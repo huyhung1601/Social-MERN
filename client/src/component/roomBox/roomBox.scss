@@ -1,0 +1,42 @@
+.roomBox {
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(47, 171, 212, 0.3) 40%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  .roomInputForm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(47, 171, 212, 0.3);
+    .roomInput {
+      border: none;
+      width: 100%;
+    }
+    .roomBtn {
+      border: none;
+      background: none;
+      width: 40px;
+      .roomBtnIcon {
+        color: white;
+      }
+    }
+  }
+  .roomList {
+    height: 14rem;
+    overflow-y: scroll;
+  }
+  .roomAdd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    .roomAddBtn {
+      border: none;
+      background: rgba(47, 171, 212, 0.7);
+      border-radius: 10px;
+    }
+  }
+
+}

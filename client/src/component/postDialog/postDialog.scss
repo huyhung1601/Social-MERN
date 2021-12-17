@@ -1,0 +1,75 @@
+.postDialog {
+    padding: 0;
+    margin: 0;
+    width: 100%;    
+    height: 55rem;
+    overflow: hidden;
+    .postDialogHeader{
+         text-align: center;
+        margin: 0;
+        background-color: rgba(47, 171, 212, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .postDialogHeaderLeft{
+            display: flex;
+            align-items: center;
+            .userAvatar{
+                margin: 5px;
+            }
+            .createdAt{
+                margin-left: 5px;
+                color: white
+            }
+        }
+        .postDialogHeaderRight{
+            display: flex;
+            .linkBtn{ 
+                border: none;
+                background-color: inherit;
+                height: 3rem;
+                width: 4rem;
+                color: white;
+                text-decoration: none;
+                &:hover{
+                    background-color: rgba(47, 171, 212, 1);
+                }
+            }
+        }
+    }
+    .postWrapper{
+        display: flex;
+        height: 100%;
+        .postWrapperLeft{
+            flex: 8.5;
+            overflow-y: scroll;
+        padding: 2rem 2rem;
+            .postTitle{
+                margin: 0 2rem ;
+            }
+            .postItems{
+                margin-bottom: 1rem;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                .textItem{
+                    min-width: 100%;
+                    margin: 0 3rem;
+                }
+                .imgItem{
+                    img{
+                        margin: 1rem ;
+                        width: 22rem;
+                        height: 16rem;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        .postWrapperRight{  
+            flex: 3.5;     
+            background-color: rgba(47, 171, 212, 0.1); 
+            
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.metRoom{
+    width: 100%;
+    height: 38rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    .metRoomContainer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .metRoomContainerLeft{
+            width: 20rem;
+            background-color: rgba(255, 255, 255,0.5);
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        }
+        .metRoomContainerRight{
+            width: 100%;
+    background-color: rgba(255,255,255,1);
+            
+    } 
+}

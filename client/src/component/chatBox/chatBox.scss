@@ -1,0 +1,33 @@
+.chatRoom {
+  width: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(47, 171, 212, 0.3) 40%,
+    rgba(255, 255, 255, 0) 60%
+  );
+
+  .msgBox {
+    height: 17.5rem;
+    overflow-y: scroll;
+  }
+  .msgInputForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+    background-color:     rgba(47, 171, 212, 0.3) ;
+    .msgInput{
+        border: none;
+        width: 100%;
+    }
+    .msgBtn{
+        border: none;
+        background: none;
+        width: 40px;
+        .msgBtnIcon {
+            color: white;
+          }
+    }
+    
+  }
+}

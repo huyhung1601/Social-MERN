@@ -1,0 +1,95 @@
+.postTitleContainer {
+  width: 100%;
+  padding: 0 3.5rem;
+  margin-top: 1rem;
+  position: relative;
+  .postTitleWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    &.editing {
+      &::after {
+        content: none;
+        position: absolute;
+        width: 150%;
+        height: 100vh;
+      }
+      background: rgba(240, 240, 240, 0.8);
+      box-shadow: -1px 3px 9px -1px rgba(0, 0, 0, 0.56);
+      z-index: 5;
+      left: 0;
+      right: 0;
+    }
+    .editorHeader {
+      background-color: rgb(120, 193, 218);
+      padding: 2px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s ease;
+      &.active {
+        z-index: 2;
+        opacity: 1;
+        visibility: visible;
+      }
+      .editorHeaderLeft {
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          li {
+            cursor: pointer;
+            padding: 3px 5px;
+            margin: 0 5px;
+            border-radius: 2px;
+            &:hover {
+              background: rgba(163, 217, 238, 0.7);
+            }
+            .fontMenu {
+              position: relative;
+              &:hover {
+                .fontList {
+                  visibility: visible;
+                  top: 2rem;
+                  z-index: 2;
+                }
+              }
+              .fontFamily {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 5rem;
+              }
+              .fontList {
+                padding: 2px;
+                width: 10rem;
+                display: flex;
+                top: 2.5rem;
+                left: -0.8rem;
+                flex-direction: column;
+                position: absolute;
+                background: rgba(163, 217, 238);
+                visibility: hidden;
+                transition: 0.2s ease-in;
+                .fontItem {
+                  padding: 2px;
+                  margin-top: 2px;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
